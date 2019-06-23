@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.deep_purple-purple.min.css" />
+		<title>Desbravalley</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			body {
+				font-size: 1em;
+				line-height: 1.5em;
+				font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			}
+
+			.mdl-layout__header-row .mdl-navigation__link {
+				color: #333333;
+				font-weight: 600;
+			}
+
+			header > .mdl-layout__drawer-button {
+				display: none;
+			}
+
+			.row {
+				display: inline-block;
+				padding: 1em 10%;
+				width: 80%;
+				min-height: 10em;
+			}
+
+			.row.black {
+				background: #1A1A1A;
+				color: #FFF;
+			}
+
+			.row .container-desbravalley {
+				float: right;
+				text-align: center;
+			}
+
+			.row .container-desbravalley .logo-desbravalley {
+				width: 100%;
+				height: 200px;
+			}
+
+			.row .container-desbravalley .logo-desbravalley img {
+				display: inline-block;
+	    		height: 100%;
+			}
+
+			.row .container-desbravalley .title-desbravalley {
+				font-weight: bold;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				letter-spacing: 5px;
+    			font-size: 3em;
+			}
+
+			.row .container-desbravalley .text-desbravalley { 
+				font-size: 1.8em;
+				margin-bottom: 60px;
+			}
+
+			.row .container-quem {
+				text-align: center;
+				display: inline-block;
+				width: 70%;
+				padding: 1em 15%;
+				margin-bottom: 3em;
+			}
+
+			.row .container-quem p.text-quem {
+				text-align: justify;
+			}
+
+			.row .container-quem .text-quem-somos {
+				position: relative;
+				padding-top: 15px;
+				margin-top: 10px;
+				font-size: 1.3em;
+				line-height: 2em;
+			}
+
+			.row .container-quem .text-quem-somos::before {
+				content: '';
+				height: 7px;
+				width: 150px;
+				left: 50%;
+				top: 0px;
+				margin-left: -75px;
+				position: absolute;
+				background: rgb(103,58,183);
+			}
+
+			.row .container-quem .btn-formulario {
+				min-width: 200px;
+				line-height: 3.5em;
+    		height: auto;
+			}
+
+			.row .container-quem .btn-left {
+				float: left;
+			}
+
+			.row .container-quem .btn-right {
+				float: right;
+			}
+
+			.row .novidades-video {
+				margin-top: 5em;
+			}
+
+			.row .novidades-facebook h1 {
+				position: relative;
+				text-align: center;
+				padding-top: 20px;
+				margin-top: 1em;
+				margin-bottom: 5px;
+			}
+
+			.row .novidades-facebook p {
+				text-align: center;
+				font-size: 1.3em;
+				font-weight: 200;
+			}
+
+			.row .novidades-facebook h1::before {
+				content: '';
+				height: 7px;
+				width: 150px;
+				left: 50%;
+				top: 0px;
+				margin-left: -75px;
+				position: absolute;
+				background: rgb(103,58,183);
+			}
+
+			.row .novidades-facebook .pagina {
+				padding: 30px;
+				border: 6px solid #FFF;
+				margin-bottom: 5em;
+			}
+
+			#contato {
+				text-align: center;
+				padding-top: 5em;
+				padding-bottom: 5em;
+			}
+
+			.row.black .contato-voluntarios span {
+				margin-right: 15px;
+			}
+
+			.row.black .contato-voluntarios span::before {
+			    content: '';
+			    height: 10px;
+			    width: 10px;
+			    display: inline-block;
+			    background: rgb(103,58,183);
+			    border-radius: 10px;
+			    margin-right: 5px;
+			}
+
+			.row.black .contato-email {
+				text-align: center;
+			}
+
+			.row.black .contato-email span {
+				color: #FFF;
+				font-size: 1.5em;
+			}
+
+			.row.black .contato-icones a {
+				color: #FFF;
+				cursor: pointer;
+				margin-right: 10px;
+				display: inline-block;
+			}
+
+			.row.black .contato-icones a svg {
+				fill: #FFF;
+				pointer-events: none;
+			}
+
+			@media (max-width: 992px) {
+				header > .mdl-layout__drawer-button {
+					display: block;
+				}
+
+				header .mdl-navigation {
+					display: none;
+				}
+
+				header.mdl-layout__header .mdl-layout__drawer-button,
+				header .mdl-layout__title, .mdl-layout-title {
+					color: #333;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+			<header class="mdl-layout__header mdl-layout__header--transparent">
+				<div class="mdl-layout__header-row">
+					<span class="mdl-layout-title">Desbravalley</span>
+					<div class="mdl-layout-spacer"></div>
+					<nav class="mdl-navigation">
+						<a class="mdl-navigation__link" href="#quem">QUEM SOMOS?</a>
+						<a class="mdl-navigation__link" href="#mapa">MAPA</a>
+						<a class="mdl-navigation__link" href="#novidades">NOVIDADES</a>
+						<a class="mdl-navigation__link" href="#app">APP</a>
+						<a class="mdl-navigation__link" href="#contato">CONTATO</a>
+					</nav>
+				</div>
+			</header>
+			<div class="mdl-layout__drawer">
+				<span class="mdl-layout-title">Desbravalley</span>
+				<nav class="mdl-navigation">
+					<a class="mdl-navigation__link" href="#quem">QUEM SOMOS?</a>
+					<a class="mdl-navigation__link" href="#mapa">MAPA</a>
+					<a class="mdl-navigation__link" href="#novidades">NOVIDADES</a>
+					<a class="mdl-navigation__link" href="#app">APP</a>
+					<a class="mdl-navigation__link" href="#contato">CONTATO</a>
+				</nav>
+			</div>
+			<main class="mdl-layout__content">
+				<div class="row" id="inicio">
+					<div class="container-desenho">
+						<canvas id="simbolo"></canvas>
+					</div>
+					<div class="container-desbravalley">
+						<div class="logo-desbravalley">
+							<img src="./logo.png"/>
+						</div>
+						<h1 class="title-desbravalley">Desbravalley</h1>
+						<p class="text-desbravalley">Comunidade inovadora<br />do oeste catarinense</p>
+					</div>
+				</div>
+				<div class="row black" id="quem">
+					<div class="container-quem">
+						<h1 class="title-quem">QUEM SOMOS?</h1>
+						<p class="text-quem">&nbsp;&nbsp;&nbsp;&nbsp;Desbravalley é um movimento de fortalecimento do ecossistema de invovação e empreendedorismo no oeste catarinense. Somos uma comunidade de empreendedores de diversas áreas, instituições e segmentos atuando como uma grande rede colaborativa.</p>
+						<p class="text-quem-somos">Somos o pensar, realizar e alcançar em conjunto.</p>
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLSfVenl3Ydxm629F_FEGTKLoSV9EAkO77Ix7N7V7sV0Vau4suA/viewform?usp=sf_link" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored btn-left btn-formulario">Seja Voluntário</a>
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLSeenOabpK_rL23ewVEc3sqYKbzcIKeZX6wRzL0mwEgouz1Y5A/viewform?usp=sf_link" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored btn-right btn-formulario">Seja Mentor</a>
+					</div>
+				</div>
+				<div class="row" id="mapa">
+					
+				</div>
+				<div class="row black" id="novidades">
+					<div class="novidades-video">
+						<iframe width="560" height="500" src="https://www.youtube.com/embed/ykcbabVT9sE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="novidades-facebook">
+						<h1>NOVIDADES</h1>
+						<p>oque esta acontecendo por aqui?</p>
+						<div class="pagina">
+							<div class="fb-page" data-href="https://www.facebook.com/desbravalley/" data-tabs="timeline" data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><blockquote cite="https://www.facebook.com/desbravalley/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/desbravalley/">Desbravalley</a></blockquote></div>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="app">
+			
+				</div>
+				<div class="row black" id="contato">
+					<h3 class="contato-duvidas">Dúvidas? Escreva pra gente!</h3>
+					<p class="contato-email">voluntariosdesbravalley@gmail.com</p>
+					<div class="contato-icones">
+						<a href="https://www.facebook.com/desbravalley/" id="facebook">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 10h-2v2h2v6h3v-6h1.82l.18-2h-2v-.833c0-.478.096-.667.558-.667h1.442v-2.5h-2.404c-1.798 0-2.596.792-2.596 2.308v1.692z"/></svg>
+						</a>
+						<a href="https://www.linkedin.com/groups/8682369/" id="linkedin">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z"/></svg>
+						</a>
+					</div>
+					<h3 class="contato-creditos"></h3>
+					<p class="contato-voluntarios">
+						<span>Andrei B. Sander</span>
+						<span>Cassia Cavalli</span>
+						<span>Marcon Zanin</span>
+						<span>Matheus Ribak</span>
+					</p>
+					<p class="contato-voluntarios">
+						<span>Raffael C. Rossi</span>
+						<span>Rodrigo Holll</span>
+						<span>Willian Suzin</span>
+					</p>
+				</div>
+			</main>
+		</div>
+		<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+		<div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v3.3"></script>
+	</body>
+</html>
