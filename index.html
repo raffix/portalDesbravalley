@@ -340,6 +340,14 @@
 				.row.black .contato-voluntarios span:nth-child(1)::before {
 					background: rgba(103,58,183, 1);
 				}
+
+				.row.black .contato-voluntarios span {
+				    margin-right: 15px;
+				    font-size: 1.2em;
+				    width: 65%;
+				    display: inline-block;
+				    text-align: left;
+				}
 			}
 		</style>
 	    <link rel="stylesheet" href="map.css?nocache=289671982568" type="text/css" />
@@ -382,7 +390,13 @@
 
 	        // resize marker list onload/resize
 	        $(document).ready(function () {
-	            resizeList()
+	        	$(".mdl-layout__drawer .mdl-navigation__link").on('click', function () {
+	        		setTimeout(function () {
+	        			$(".mdl-layout__obfuscator.is-visible").trigger('click');
+	        		}, 600);
+	        	});
+
+	            resizeList();
 	        });
 	        $(window).resize(function () {
 	            resizeList();
