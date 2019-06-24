@@ -200,13 +200,13 @@
 			    text-align: center;
 			}
 
-			.row .app-qr-code img {
+			.row .app-qr-code .img {
 				display: inline-block;
-			    width: 200px;
-			    margin-left: 50%;
-			    margin-top: 8em;
-			    left: -120px;
+			    width: 100%;
+			    height: 150px;
 			    position: relative;
+			    background: url(./qr.png) center no-repeat;
+			    margin-top: 7em;
 			}
 
 			.row .app-qr-code .btn-formulario {
@@ -1201,7 +1201,7 @@
 				</div>
 				<div class="row" id="app">
 					<div class="app-qr-code">
-						<img src="./qr.png" class="mdl-layout--large-screen-only">
+						<div src="./qr.png" class="img mdl-layout--large-screen-only"></div>
 						<a href="https://desbravalley.glideapp.io/" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored btn-center btn-formulario">Acessar o App</a>
 						<p class="app-texto">Acesse conteúdos, agenda de eventos<br/> e mentorias gratuitas para evoluir seus negócios.</p>
 					</div>
