@@ -79,6 +79,10 @@
 			.row .container-desbravalley .logo-desbravalley img {
 				display: inline-block;
 	    		height: 100%;
+    		    z-index: 10;
+			    position: relative;
+			    background: rgba(255, 255, 0255, 0.7);
+			    border-radius: 50%;
 			}
 
 			.row .container-desbravalley .title-desbravalley {
@@ -199,11 +203,14 @@
 			.row .app-qr-code img {
 				display: inline-block;
 			    width: 200px;
-			    margin-bottom: 5em;
 			    margin-left: 50%;
 			    margin-top: 8em;
 			    left: -120px;
 			    position: relative;
+			}
+
+			.row .app-qr-code .btn-formulario {
+				margin-top: 5em;
 			}
 
 			.row .app-image {
@@ -318,8 +325,12 @@
 					margin-left: 5%;
 				}
 
-				.row .app-qr-code img {
-					margin-left: -95px;
+				.row .app-qr-code .btn-formulario {
+					margin-top: 2em;
+				}
+
+				.row .app-texto {
+					margin-top: 2em;
 				}
 
 				.row.black .contato-email {
@@ -815,7 +826,7 @@
 				<div class="row" id="inicio">
 					<div class="container-desbravalley">
 						<div class="logo-desbravalley">
-							<img src="./logo.png"/>
+							<img src="https://i.ibb.co/bbzzpmS/logo.png"/>
 						</div>
 						<h1 class="title-desbravalley">Desbravalley</h1>
 						<p class="text-desbravalley">Comunidade inovadora<br />do oeste catarinense</p>
@@ -1163,7 +1174,8 @@
 				</div>
 				<div class="row black" id="novidades">
 					<div class="novidades-video">
-						<iframe width="560" height="500" src="https://www.youtube.com/embed/ykcbabVT9sE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe class="mdl-layout--small-screen-only" width="300" height="200" src="https://www.youtube.com/embed/ykcbabVT9sE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<iframe class="mdl-layout--large-screen-only" width="560" height="500" src="https://www.youtube.com/embed/ykcbabVT9sE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<div class="novidades-facebook">
 						<h1>NOVIDADES</h1>
@@ -1175,7 +1187,7 @@
 				</div>
 				<div class="row" id="app">
 					<div class="app-qr-code">
-						<img src="./qr.png">
+						<img src="./qr.png" class="mdl-layout--large-screen-only">
 						<a href="https://desbravalley.glideapp.io/" class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored btn-center btn-formulario">Acessar o App</a>
 						<p class="app-texto">Acesse conteúdos, agenda de eventos<br/> e mentorias gratuitas para evoluir seus negócios.</p>
 					</div>
