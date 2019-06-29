@@ -665,6 +665,22 @@
 				markers.push(['GARRA MARCAS', 'consultoria', '-27.102414', '-52.613000', 'Empresa consultoria especializada em Propriedade Intelectual (Registro de Marcas, Patentes e Registro de Software).', 'www.garramarcas.com.br', 'Rua Barão do Rio Branco, 171 D, Sala 304, Edifício Zandonai, Chapecó/SC']);
 	            markerTitles[42] = 'GARRA MARCAS';
 
+				markers.push(['Kemia Tratamento de Efluentes', 'startup', '-27.1011804', '-52.6188987', 'Fabricação, venda, aluguel, projetos e operação de estações de tratamento de água, esgoto e efluentes.', 'www.kemia.com.br', 'Bairro São Cristóvão']);
+	            markerTitles[43] = 'Kemia Tratamento de Efluentes';
+
+				markers.push(['Saphir', 'empresas', '-27.103615', '-52.610937', 'Especializada em gerenciamento cloud, projetos cloud, consultoria, cloud computing, cloud backup, hospedagem de sites e segurança', 'https://saphir.com.br', 'Rua Rui Barbosa, 50-E, SL 302 - Centro, Chapecó/SC - 89.801-040']);
+	            markerTitles[44] = 'Saphir';
+
+	            markers.push(['CasaMake coworking', 'coworking', '-27.0695583', '-52.6236958', 'Coworking - espaço multiuso', 'casamake.com.br', 'Avenida Getúlio Vargas, 4135 N , bairro líder, Chapecó, SC']);
+	            markerTitles[45] = 'CasaMake coworking ';
+
+				markers.push(['ZettaBrasil Sistemas de Gestão', 'empresas', '-26.8487425', '-52.9913826', 'Sistemas de Gestão ERP ', 'www.zettabrasil.com.br', 'Rua Florianópolis, 2801, 89870-000, Pinhalzinho, SC']);
+	            markerTitles[46] = 'ZettaBrasil Sistemas de Gestão';
+
+				markers.push(['Coopercarga', 'empresas', '-27.2285102', '-52.0173485', 'Cooperativa de Transporte de Cargas', 'www.coopercarga.com.br', 'Marechal Deodoro, 36, Centro, Concórdia - SC']);
+	            markerTitles[47] = 'Coopercarga';
+
+
 	            // add markers
 	            jQuery.each(markers, function (i, val) {
 	                infowindow = new google.maps.InfoWindow({
@@ -873,7 +889,7 @@
 				                <div class='category_item'>
 				                    <div class='category_toggle' onClick="toggle('coworking')" id='filter_coworking'></div>
 				                    <a href='#' onClick="toggleList('coworking');" class='category_info'><img
-				                            src='./images/icones/coworking.png' alt='' />Coworking<span class='total'> (2)</span></a>
+				                            src='./images/icones/coworking.png' alt='' />Coworking<span class='total'> (3)</span></a>
 				                </div>
 				                <ul class='list-items list-coworking'>
 				                    <li class='coworking'>
@@ -885,6 +901,12 @@
 				                    <li class='coworking'>
 				                        <a href='#' onMouseOver="markerListMouseOver('17')" onMouseOut="markerListMouseOut('17')"
 				                            onClick="goToMarker('17');">Espaço Colmeia Coworking
+				                        </a>
+									</li>
+									
+									<li class='coworking'>
+				                        <a href='#' onMouseOver="markerListMouseOver('45')" onMouseOut="markerListMouseOut('45')"
+				                            onClick="goToMarker('45');">CasaMake coworking 
 				                        </a>
 				                    </li>
 				                </ul>
@@ -943,7 +965,7 @@
 				                <div class='category_item'>
 				                    <div class='category_toggle' onClick="toggle('empresas')" id='filter_empresas'></div>
 				                    <a href='#' onClick="toggleList('empresas');" class='category_info'><img
-				                            src='./images/icones/empresas.png' alt='' />Empresa<span class='total'> (7)</span></a>
+				                            src='./images/icones/empresas.png' alt='' />Empresa<span class='total'> (10)</span></a>
 				                </div>
 				                <ul class='list-items list-empresas'>
 				                    <li class='empresas'>
@@ -983,6 +1005,24 @@
 									<li class='empresas'>
 				                        <a href='#' onMouseOver="markerListMouseOver('41')" onMouseOut="markerListMouseOut('41')"
 				                            onClick="goToMarker('41');">Reino Bambini
+				                        </a>
+									</li>
+									
+									<li class='empresas'>
+				                        <a href='#' onMouseOver="markerListMouseOver('44')" onMouseOut="markerListMouseOut('44')"
+				                            onClick="goToMarker('44');">Saphir
+				                        </a>
+									</li>
+									
+									<li class='empresas'>
+				                        <a href='#' onMouseOver="markerListMouseOver('46')" onMouseOut="markerListMouseOut('46')"
+				                            onClick="goToMarker('46');">ZettaBrasil Sistemas de Gestão
+				                        </a>
+									</li>
+									
+									<li class='empresas'>
+				                        <a href='#' onMouseOver="markerListMouseOver('47')" onMouseOut="markerListMouseOut('47')"
+				                            onClick="goToMarker('47');">Coopercarga
 				                        </a>
 				                    </li>
 
@@ -1093,7 +1133,7 @@
 				                <div class='category_item'>
 				                    <div class='category_toggle' onClick="toggle('startup')" id='filter_startup'></div>
 				                    <a href='#' onClick="toggleList('startup');" class='category_info'><img
-				                            src='./images/icones/startup.png' alt='' />Startups<span class='total'> (17)</span></a>
+				                            src='./images/icones/startup.png' alt='' />Startups<span class='total'> (18)</span></a>
 				                </div>
 				                <ul class='list-items list-startup'>
 
@@ -1195,6 +1235,12 @@
 									<li class='startup'>
 				                        <a href='#' onMouseOver="markerListMouseOver('40')" onMouseOut="markerListMouseOut('40')"
 				                            onClick="goToMarker('40');">AgroSimulador Sistemas
+				                        </a>
+									</li>
+									
+									<li class='startup'>
+				                        <a href='#' onMouseOver="markerListMouseOver('43')" onMouseOut="markerListMouseOut('43')"
+				                            onClick="goToMarker('43');">Kemia Tratamento de Efluentes
 				                        </a>
 				                    </li>
 
