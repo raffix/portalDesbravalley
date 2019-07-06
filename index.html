@@ -689,6 +689,9 @@
 				markers.push(['Amo Delivery', 'startup', '-27.103717', '-52.61598766', 'Plataforma de venda de Alimentos e Bebidas', 'http://amo.delivery/', 'Rua Jorge Lacerda, 80-E, Ed. San Sebastian, Sala 401 - Centro']);
 	            markerTitles[50] = 'Amo Delivery';
 
+				markers.push(['Speed UP', 'escola', '-27.09693012', '-52.61472487', 'Academia de Inglês para Adultos', 'www.speedup18meses.com.br', 'Nereu Ramos, 875e']);
+	            markerTitles[51] = 'Speed UP';
+
 	            // add markers
 	            jQuery.each(markers, function (i, val) {
 	                infowindow = new google.maps.InfoWindow({
@@ -1041,7 +1044,24 @@
 				                    </li>
 
 				                </ul>
-				            </li>
+							</li>
+							
+							<li class='category'>
+				                <div class='category_item'>
+				                    <div class='category_toggle' onClick="toggle('escola')" id='filter_escola'></div>
+				                    <a href='#' onClick="toggleList('escola');" class='category_info'><img
+				                            src='./images/icones/escola.png' alt='' />Escola<span class='total'> (1)</span></a>
+				                </div>
+				                <ul class='list-items list-escola'>
+				                    <li class='escola'>
+				                        <a href='#' onMouseOver="markerListMouseOver('51')" onMouseOut="markerListMouseOut('51')"
+				                            onClick="goToMarker('51');">Speed UP
+				                        </a>
+				                    </li>
+				                  
+				                </ul>
+							</li>
+							
 				            <li class='category'>
 				                <div class='category_item'>
 				                    <div class='category_toggle' onClick="toggle('Incubadora')" id='filter_Incubadora'></div>
