@@ -704,6 +704,8 @@
 				markers.push(['pré-inCH UNOESC Chapecó', 'Incubadora', '-27.13441806', '-52.59968787', 'A pré-inCH UNOESC Chapecó é um habitat do ecosistema de inovação e fomento ao empreendedorismo, no formato residente e não residente. Atua com  a pré-incubação nos seguintes modelos: 1) validação de ideia e modelo de negócio; 2) pré-incubação de empreendimento; 3) pré-incubação colaborativa. ', 'https://www.fb.com/nitunoescchapeco/', ' Av. Nereu Ramos, 3777D - Seminário, Chapecó - SC, 89813-000, Bloco A']);
 	            markerTitles[55] = 'pré-inCH UNOESC Chapecó';
 
+				markers.push(['Garagem Tecnológica', 'espaco_inovacao', '-27.13511984', '-52.59838969', 'A Garagem Tecnológica da UNOESC Chapecó é um espaço de inovação aberto aos acadêmicos onde são realizados experimentos a nível de robótica e IoT. A Garagem Tecnológica é sede do Grupo de Robótica Oesc Spark.', '', ' Av. Nereu Ramos, 3777D - Seminário, Chapecó - SC, 89813-000, Bloco A']);
+	            markerTitles[56] = 'Garagem Tecnológica';
 
 	            // add markers
 	            jQuery.each(markers, function (i, val) {
@@ -996,7 +998,10 @@
 				                        </a>
 				                    </li>
 				                </ul>
-				            </li>
+							</li>
+
+						
+							
 				            <li class='category'>
 				                <div class='category_item'>
 				                    <div class='category_toggle' onClick="toggle('empresas')" id='filter_empresas'></div>
@@ -1084,6 +1089,23 @@
 				                        </a>
 				                    </li>
 				                  
+				                </ul>
+							</li>
+
+							<li class='category'>
+				                <div class='category_item'>
+				                    <div class='category_toggle' onClick="toggle('espaco_inovacao')" id='filter_espaco_inovacao'>
+				                    </div>
+				                    <a href='#' onClick="toggleList('espaco_inovacao');" class='category_info'><img
+				                            src='./images/icones/espaco_inovacao.png' alt='' />Espaço de Inovação<span class='total'>
+				                            (1)</span></a>
+				                </div>
+				                <ul class='list-items list-espaco_inovacao'>
+				                    <li class='espaco_inovacao'>
+				                        <a href='#' onMouseOver="markerListMouseOver('56')" onMouseOut="markerListMouseOut('56')"
+				                            onClick="goToMarker('56');">Garagem Tecnológica
+				                        </a>
+				                    </li>
 				                </ul>
 							</li>
 							
