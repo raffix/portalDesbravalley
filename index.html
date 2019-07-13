@@ -692,6 +692,16 @@
 				markers.push(['Speed UP', 'escola', '-27.09693012', '-52.61472487', 'Academia de Inglês para Adultos', 'www.speedup18meses.com.br', 'Nereu Ramos, 875e']);
 	            markerTitles[51] = 'Speed UP';
 
+				markers.push(['Prevenção Vacinas', 'empresas', '-27.1017362', '-52.6225616', 'Clínica especializada em promover saúde preventiva, através de consultas médicas e vacinas', 'www.prevencaovacinas.com.br', 'Av. General Osório, 465D,. Bairro Jardim Itália. Chapecó - SC']);
+	            markerTitles[52] = 'Prevenção Vacinas';
+
+				markers.push(['UNOESC Chapecó', 'coworking', '-27.1346138', '-52.59924263', 'Neste espaço empresas realizam P&D de inovação externo com a colaboração de professores e acadêmicos da UNOESC Chapecó.', 'https://www.fb.com/nitunoescchapeco/', ' Av. Nereu Ramos, 3777D - Seminário, Chapecó - SC, 89813-000, Bloco A']);
+	            markerTitles[53] = 'UNOESC Chapecó';
+
+				markers.push(['UNOESC Chapecó', 'inst_ensino', '-27.1346138', '-52.59924263', 'A vinda da UNOESC a cidade de Chapecó remonta a década de 1960. Ficou  ausente no período de 2001 a 2009, quando da cisão do Campus Chapecó junto a Funoesc. Atualmente, o campus possui mais de 2.500 alunos, 9 cursos de graduação presencial (Administração, Arquitetura e Urbanismo, Ciências Contábeis, Direito, Educação Física (bacharelado e licenciatura), Engenharia Civil, Engenharia da Computação, Psicologia e Sistemas de Informação), 2 cursos de graduação EAD (Tecnologia em Processos Gerenciais e Licenciatura em Informática), dezenas de cursos de pós-graduação lato-sensu, 2 mestrados (Administração e Direito) e 2 Doutorados (Administração e Direito). Ainda presta Serviços de Atendimento Psicológico pelo SAP, Jurídico pelo NPJ e consultorias e capacitações empresariais pelo CGE - Centro de Gestão e Empreendedorismo.', 'https://www.unoesc.edu.br/', ' Av. Nereu Ramos, 3777D - Seminário, Chapecó - SC, 89813-000']);
+	            markerTitles[54] = 'UNOESC Chapecó';
+
+
 	            // add markers
 	            jQuery.each(markers, function (i, val) {
 	                infowindow = new google.maps.InfoWindow({
@@ -900,7 +910,7 @@
 				                <div class='category_item'>
 				                    <div class='category_toggle' onClick="toggle('coworking')" id='filter_coworking'></div>
 				                    <a href='#' onClick="toggleList('coworking');" class='category_info'><img
-				                            src='./images/icones/coworking.png' alt='' />Coworking<span class='total'> (3)</span></a>
+				                            src='./images/icones/coworking.png' alt='' />Coworking<span class='total'> (4)</span></a>
 				                </div>
 				                <ul class='list-items list-coworking'>
 				                    <li class='coworking'>
@@ -918,6 +928,12 @@
 									<li class='coworking'>
 				                        <a href='#' onMouseOver="markerListMouseOver('45')" onMouseOut="markerListMouseOut('45')"
 				                            onClick="goToMarker('45');">CasaMake coworking 
+				                        </a>
+									</li>
+									
+									<li class='coworking'>
+				                        <a href='#' onMouseOver="markerListMouseOver('53')" onMouseOut="markerListMouseOut('53')"
+				                            onClick="goToMarker('53');">UNOESC Chapecó
 				                        </a>
 				                    </li>
 				                </ul>
@@ -982,7 +998,7 @@
 				                <div class='category_item'>
 				                    <div class='category_toggle' onClick="toggle('empresas')" id='filter_empresas'></div>
 				                    <a href='#' onClick="toggleList('empresas');" class='category_info'><img
-				                            src='./images/icones/empresas.png' alt='' />Empresa<span class='total'> (10)</span></a>
+				                            src='./images/icones/empresas.png' alt='' />Empresa<span class='total'> (11)</span></a>
 				                </div>
 				                <ul class='list-items list-empresas'>
 				                    <li class='empresas'>
@@ -1040,6 +1056,12 @@
 									<li class='empresas'>
 				                        <a href='#' onMouseOver="markerListMouseOver('47')" onMouseOut="markerListMouseOut('47')"
 				                            onClick="goToMarker('47');">Coopercarga
+				                        </a>
+									</li>
+									
+									<li class='empresas'>
+				                        <a href='#' onMouseOver="markerListMouseOver('52')" onMouseOut="markerListMouseOut('52')"
+				                            onClick="goToMarker('52');">Prevenção Vacinas
 				                        </a>
 				                    </li>
 
@@ -1117,7 +1139,7 @@
 				                    <div class='category_toggle' onClick="toggle('inst_ensino')" id='filter_inst_ensino'></div>
 				                    <a href='#' onClick="toggleList('inst_ensino');" class='category_info'><img
 				                            src='./images/icones/inst_ensino.png' alt='' />Inst. de Ensino Superior<span class='total'>
-				                            (3)</span></a>
+				                            (4)</span></a>
 				                </div>
 
 				                <ul class='list-items list-inst_ensino'>
@@ -1136,6 +1158,12 @@
 				                    <li class='inst_ensino'>
 				                        <a href='#' onMouseOver="markerListMouseOver('28')" onMouseOut="markerListMouseOut('28')"
 				                            onClick="goToMarker('28');">UNOCHAPECO - Universidade Comunitária da Região de Chapecó
+				                        </a>
+									</li>
+									
+									<li class='inst_ensino'>
+				                        <a href='#' onMouseOver="markerListMouseOver('54')" onMouseOut="markerListMouseOut('54')"
+				                            onClick="goToMarker('54');">UNOESC Chapecó
 				                        </a>
 				                    </li>
 				                </ul>
