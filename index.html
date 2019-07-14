@@ -707,6 +707,18 @@
 				markers.push(['Garagem Tecnológica', 'espaco_inovacao', '-27.13511984', '-52.59838969', 'A Garagem Tecnológica da UNOESC Chapecó é um espaço de inovação aberto aos acadêmicos onde são realizados experimentos a nível de robótica e IoT. A Garagem Tecnológica é sede do Grupo de Robótica Oesc Spark.', '', ' Av. Nereu Ramos, 3777D - Seminário, Chapecó - SC, 89813-000, Bloco A']);
 	            markerTitles[56] = 'Garagem Tecnológica';
 
+				markers.push(['NIT UNOESC Chapecó', 'outros', '-27.13461857', '-52.5991568', 'O Núcleo de Inovação Técnológica da UNOESC Chapecó é um ator do habitat do ecosistema de inovação que tem por função auxiliar a retenção de propriedade intelectual das pesquisas e empreendimentos realizados junto a UNOESC Chapecó, bem como é responsável pelo mantenimento da pré-incubadora tecnológica (pré-inCH UNOESC Chapecó) e do espaço coworking (UNCW Unoesc Coworking Chapecó).', 'https://www.fb.com/nitunoescchapeco/', ' Av. Nereu Ramos, 3777D - Seminário, Chapecó - SC, 89813-000, Bloco B']);
+	            markerTitles[57] = 'NIT UNOESC Chapecó';
+
+				markers.push(['Bionexus Allagro', 'startup', '-27.08792392', '-52.6273495', 'Pesquisa, desenvolvimento e comercialização de equipamentos eletrônicos para o segmento agro com foco na bovinocultura leiteira.', 'www.bionexus.com.br', 'R. Martinho Lutero, 658E - São Cristovão | Sala 103']);
+	            markerTitles[58] = 'Bionexus Allagro';
+
+				markers.push(['CartoApp', 'startup', '-27.1052452', '-52.6139721', 'Empresa de Desenvolvimento de Software', 'carto360.com.br', 'Rua Nereu Ramos, 75-E Ed. CPC - Centro - Chapecó']);
+	            markerTitles[59] = 'CartoApp';
+
+				markers.push(['Ergânic', 'startup', '-27.04928429', '-52.669487', 'Feira online de produtos locais da agricultura familiar, orgânicos e coloniais. Você compra direto do agricultor de sua cidade e recebe no conforto de sua casa, além de contribuir para a sustentabilidade e empoderamento desse setor.', 'www.erganic.com.br', 'Faxinal dos Rosa ( interior) s/n']);
+	            markerTitles[60] = 'Ergânic';
+
 	            // add markers
 	            jQuery.each(markers, function (i, val) {
 	                infowindow = new google.maps.InfoWindow({
@@ -1226,7 +1238,7 @@
 				                <div class='category_item'>
 				                    <div class='category_toggle' onClick="toggle('startup')" id='filter_startup'></div>
 				                    <a href='#' onClick="toggleList('startup');" class='category_info'><img
-				                            src='./images/icones/startup.png' alt='' />Startups<span class='total'> (20)</span></a>
+				                            src='./images/icones/startup.png' alt='' />Startups<span class='total'> (23)</span></a>
 				                </div>
 				                <ul class='list-items list-startup'>
 
@@ -1347,7 +1359,30 @@
 				                        <a href='#' onMouseOver="markerListMouseOver('50')" onMouseOut="markerListMouseOut('50')"
 				                            onClick="goToMarker('50');">Amo Delivery
 				                        </a>
+									</li>
+									
+									<li class='startup'>
+				                        <a href='#' onMouseOver="markerListMouseOver('58')" onMouseOut="markerListMouseOut('58')"
+				                            onClick="goToMarker('58');">Bionexus Allagro
+
+				                        </a>
+									</li>
+									
+									<li class='startup'>
+				                        <a href='#' onMouseOver="markerListMouseOver('59')" onMouseOut="markerListMouseOut('59')"
+				                            onClick="goToMarker('59');">CartoApp
+
+				                        </a>
+									</li>
+									
+									<li class='startup'>
+				                        <a href='#' onMouseOver="markerListMouseOver('60')" onMouseOut="markerListMouseOut('60')"
+				                            onClick="goToMarker('60');">Ergânic
+
+
+				                        </a>
 				                    </li>
+
 
 				                </ul>
 				            </li>
@@ -1356,7 +1391,7 @@
 				                <div class='category_item'>
 				                    <div class='category_toggle' onClick="toggle('outros')" id='filter_outros'></div>
 				                    <a href='#' onClick="toggleList('outros');" class='category_info'><img
-				                            src='./images/icones/outros.png' alt='' />Outros<span class='total'> (3)</span></a>
+				                            src='./images/icones/outros.png' alt='' />Outros<span class='total'> (4)</span></a>
 				                </div>
 				                <ul class='list-items list-outros'>
 				                    <li class='outros'>
@@ -1372,6 +1407,12 @@
 				                    <li class='outros'>
 				                        <a href='#' onMouseOver="markerListMouseOver('5')" onMouseOut="markerListMouseOut('5')"
 				                            onClick="goToMarker('5');">Chaminé Design e Gestão de Marcas
+				                        </a>
+									</li>
+									
+									<li class='outros'>
+				                        <a href='#' onMouseOver="markerListMouseOver('57')" onMouseOut="markerListMouseOut('57')"
+				                            onClick="goToMarker('57');">NIT UNOESC Chapecó
 				                        </a>
 				                    </li>
 				                </ul>
